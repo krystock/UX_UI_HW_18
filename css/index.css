@@ -3,6 +3,53 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
+/* Heading styles */
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    color: #132743;
+    margin-left: 10%;
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #132743;
+    margin-left: 10%;
+}
+
+h3 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #132743;
+}
+
+h4 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #132743;
+}
+
+h5 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #132743;
+}
+
+h6 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #132743;
+}
+
+/* navigation styling */
+
 .navigation header{
     width: 100%;
     background-color: #fffcf2;
@@ -48,13 +95,23 @@ height: auto;
 
 .content h3 {
     font-family: 'Roboto Slab', serif;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
     color: #132743;
     margin-left: 10%;
 }
 
-button {
+button { 
+    width: auto;
+    border: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    color: #132743;
+    display: block;
+}
+
+
+.transparent {
     width: auto;
     margin-left: 10%;
     margin-top: 20%;
@@ -66,6 +123,59 @@ button {
     text-decoration: underline;
 }
 
+/* HW 18- Flex Container*/
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexContainer > div {
+    width: 30%;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+
+.flexContainer > div > img {
+    width: 99%;
+}
+
+
+/*HW 18- Work Grid */
+
+.workGrid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 30% 30% 30%;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "div img div h4 p button";
+}
+
+.workGrid > div {
+    margin: 5%;
+}
+
+.workGrid > div > img {
+    width: 95%;
+}
+
+.workGrid > div > h4 {
+    margin: 5%;
+}
+
+.workGrid > div > p {
+    margin: 5%;
+}
+
+.workGrid > div > button {
+    margin: 5%;
+}
+
+.myWork h3 { 
+    margin-top: 5%;
+    text-align: center;
+}
 
 
 footer {
@@ -100,53 +210,57 @@ footer {
     margin-right: 5%;
 }
 
-/* Code from the homework
+/* Media Queries */
 
-.inline-block{
-    display: inline-block;
-    vertical-align: top;
-}
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+    }
 
-.logo{
-    padding: 1%;
-    text-align: center;
-    width: 23%;
-}
+    .flexContainer > div {
+        width: 100%;
+    }
 
-nav{
-    width: 73%;
-    padding: 1%;
-}
+    .flexContainer > div > img {
+        width: 75%;
+    }
 
-ul{
-    width: 50%;
-    margin-left: auto;
-}
+    .workGrid {
+        margin: 0px 5%;
+        grid-template-rows: 20% 20% 20% 20% 20% 20%;
+        grid-template-columns: 1fr;
+        grid-template-areas: "div img"
+        "div h4 p button"
+        "div img"
+        "div h4 p button"
+        "div img"
+        "div h4 p button";
+    }
 
-.content{
-    width: 500px;
-    margin: 0 auto;
-}
+    .workGrid > div {
+        margin: 5%;
+    }
 
-.heroImg section{
-    height: 600px;
-    padding: 25px;
-}
+    .workGrid > div > img {
+        width: 95%;
+    }
+    
+    .workGrid > div > h4 {
+        margin: 5%;
+    }
+    
+    .workGrid > div > p {
+        margin: 5%;
+    }
+    
+    .workGrid > div > button {
+        margin: 5%;
+    }
 
-footer {
-    background-color: #373738;
-}
+    .myWork h3{
+        margin-top: 50%;
+        text-align: center;
+    }
 
-footer > ul {
-display: inline-block;
-vertical-align: top;
-margin: auto;
 }
-
-footer > ul > li{
-  text-align: center;
-  color: white;
-  margin: auto;
-  padding: 8%;
-}
-*/
