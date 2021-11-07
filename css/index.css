@@ -25,6 +25,7 @@ h3 {
     font-size: 25px;
     font-weight: 400;
     color: #132743;
+    text-align: left;
 }
 
 h4 {
@@ -81,16 +82,37 @@ p {
     display: inline-block;
 }
 
+a {
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    color: #132743;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* Content section */
+
+
 .content section {
 width: 100%;
 height: auto;
+margin-bottom: 20%;
 }
 
+
 .hero {
-    width: 15%;
+    width: 35%;
     float: right;
     margin-top: 5%;
     margin-right: 10%;
+}
+
+.hero img {
+    width: 70%;
 }
 
 .content h3 {
@@ -110,8 +132,11 @@ button {
     display: block;
 }
 
+.content button {
+    margin-top: 30%;
+}
 
-.transparent {
+#transparent {
     width: auto;
     margin-left: 10%;
     margin-top: 20%;
@@ -124,6 +149,11 @@ button {
 }
 
 /* HW 18- Flex Container*/
+
+
+.mySkills > h1 {
+    margin-top: 15%;
+}
 
 .flexContainer {
     display: flex;
@@ -182,6 +212,14 @@ footer {
    margin-top: 10%;
     width: 100%;
     border-top: 1px solid #132743;
+}
+
+footer a {
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    color: #132743;
+    display: inline-block;
+    text-decoration: none;
 }
 
 .email{
